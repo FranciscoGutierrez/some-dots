@@ -8,7 +8,7 @@ A custom-element to create many fancy dots.
 
 Install it using bower:
 
-```
+```bash
 $ bower install some-dots --save
 ```
 
@@ -16,12 +16,12 @@ $ bower install some-dots --save
 
 Import the custom element:
 
-```
+```html
 <link rel="import" href="bower_components/some-dots/some-dots.html">
 ```
 Then you can use it:
 
-```
+```html
 <some-dots></some-dots>
 ```
 
