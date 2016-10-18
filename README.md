@@ -13,7 +13,7 @@ https://franciscogutierrez.github.io/some-dots/components/some-dots/demo/
 Install it using bower:
 
 ```bash
-$ bower install some-dots --save
+$ bower install https://github.com/FranciscoGutierrez/some-dots.git
 ```
 
 ## Usage
