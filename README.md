@@ -4,6 +4,8 @@ A custom-element to create many fancy dots.
 
 ## Watch the demo:
 
+https://franciscogutierrez.github.io/some-dots/components/some-dots/demo/
+
 ## Install
 
 Install it using bower:
@@ -25,6 +27,6 @@ Then you can use it:
 <some-dots></some-dots>
 ```
 
-Please look the documentation for more options.
+Please look at the [documentation](https://franciscogutierrez.github.io/some-dots/components/some-dots/demo/) for more options.
 
 # Screen Shots
