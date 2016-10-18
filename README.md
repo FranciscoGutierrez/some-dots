@@ -1,38 +1,30 @@
 # \<some-dots\>
 
-An element with fancy dots
+A custom-element to create many fancy dots.
 
-## Install the Polymer-CLI
+## Watch the demo:
 
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your application locally.
+## Install
 
-## Viewing Your Application
-
-```
-$ polymer serve
-```
-
-## Building Your Application
+Install it using bower:
 
 ```
-$ polymer build
+$ bower install some-dots --save
 ```
 
-This will create a `build/` folder with `bundled/` and `unbundled/` sub-folders
-containing a bundled (Vulcanized) and unbundled builds, both run through HTML,
-CSS, and JS optimizers.
+## Usage
 
-You can serve the built versions by giving `polymer serve` a folder to serve
-from:
+Import the custom element:
 
 ```
-$ polymer serve build/bundled
+<link rel="import" href="bower_components/some-dots/some-dots.html">
+```
+Then you can use it:
+
+```
+<some-dots></some-dots>
 ```
 
-## Running Tests
+Please look the documentation for more options.
 
-```
-$ polymer test
-```
-
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
+# Screen Shots
