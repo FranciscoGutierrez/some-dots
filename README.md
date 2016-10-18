@@ -2,6 +2,8 @@
 
 A custom-element to create many fancy dots.
 
+<img src="demo/scs.png">
+
 ## Watch the demo:
 
 https://franciscogutierrez.github.io/some-dots/components/some-dots/demo/
