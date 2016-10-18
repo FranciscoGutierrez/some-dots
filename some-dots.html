@@ -43,15 +43,18 @@ Polymer({
     this.dots = new Array(this.n);
   },
   properties: {
+    /* Any colour you like, #hex or rgba */
     color: {
       type: String,
       value: "rebeccapurple"
     },
+    /* Any non-negative number */
     n: {
       type: Number,
       value: 10,
       observer: '_nChanged'
     },
+    /* xx-small x-small small medium large x-large xx-large */
     size: {
       type: String,
       value: "medium",
