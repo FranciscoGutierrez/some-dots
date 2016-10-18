@@ -28,5 +28,3 @@ Then you can use it:
 ```
 
 Please look at the [documentation](https://franciscogutierrez.github.io/some-dots/components/some-dots/demo/) for more options.
-
-# Screen Shots
