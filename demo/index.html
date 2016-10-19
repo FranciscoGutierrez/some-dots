@@ -1,51 +1,60 @@
 <!doctype html>
 <html>
-  <head>
-    <title>some-dots demo</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+<head>
+  <title>some-dots demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
 
-    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
 
-    <link rel="import" href="../some-dots.html">
+  <link rel="import" href="../some-dots.html">
 
-    <style is="custom-style" include="demo-pages-shared-styles">
-    </style>
-  </head>
-  <body>
+  <style is="custom-style" include="demo-pages-shared-styles">
+  some-dots.cyan  { --dot-background-color: #76E3FF; }
+  some-dots.white { --dot-background-color: #EEEEEE; }
+  some-dots.pink  { --dot-background-color: #FF00FF; }
+  </style>
+</head>
+<body>
 
-    <div class="vertical-section-container centered">
-      <h3>some-dots</h3>
-      <demo-snippet>
-        <template>
-          <some-dots></some-dots>
-        </template>
-      </demo-snippet>
+  <div class="vertical-section-container centered">
+    <h3>some-dots</h3>
+    <demo-snippet>
+      <template>
+        <some-dots></some-dots>
+      </template>
+    </demo-snippet>
 
-      <demo-snippet>
-        <template>
-          <some-dots n="1500" size="xx-small"></some-dots>
-        </template>
-      </demo-snippet>
+    <demo-snippet>
+      <template>
+        <some-dots n="1500" size="xx-small"></some-dots>
+      </template>
+    </demo-snippet>
 
-      <demo-snippet>
-        <template>
-          <some-dots n="5" size="x-large"></some-dots>
-        </template>
-      </demo-snippet>
+    <demo-snippet>
+      <template>
+        <some-dots n="5" size="x-large"></some-dots>
+      </template>
+    </demo-snippet>
 
-      <h3>AugmentHCI</h3>
-      <demo-snippet>
-        <template>
-          <some-dots n="100" color="#76E3FF"></some-dots>
-          <some-dots n="25"  color="#eeeeee"></some-dots>
-          <some-dots n="100" color="#FF00FF"></some-dots>
-        </template>
-      </demo-snippet>
+    <h3>Custom CSS, styling</h3>
+    <demo-snippet>
+      <template>
+      <style is="custom-style">
+      some-dots.cyan  { --dot-background-color: #76E3FF; }
+      some-dots.white { --dot-background-color: #EEEEEE; }
+      some-dots.pink  { --dot-background-color: #FF00FF; }
+      </style>
 
-    </div>
+      <some-dots class="cyan"  n="100"></some-dots>
+      <some-dots class="white" n="25" ></some-dots>
+      <some-dots class="pink"  n="100"></some-dots>
+    </template>
+  </demo-snippet>
 
-  </body>
+</div>
+
+</body>
 </html>
