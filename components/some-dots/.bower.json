@@ -1,0 +1,26 @@
+{
+  "name": "some-dots",
+  "description": "An element with fancy dots",
+  "main": "some-dots.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "dom-repeat-n": "^1.0.2"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "homepage": "https://github.com/FranciscoGutierrez/some-dots",
+  "_release": "63a4be6d48",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "63a4be6d48ae00e3bfc1aae6d44104568286d89f"
+  },
+  "_source": "git://github.com/FranciscoGutierrez/some-dots.git",
+  "_target": "master",
+  "_originalSource": "FranciscoGutierrez/some-dots",
+  "_direct": true
+}

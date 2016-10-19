@@ -1,0 +1,86 @@
+<link rel="import" href="../polymer/polymer.html">
+<!--
+`some-dots`
+An element with fancy dots
+
+### Styling
+
+`<some-dots>` provides the following custom properties and mixins
+for styling:
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--dot-background-color` | Background color of the dot | rebeccapurple
+
+@demo demo/index.html
+-->
+
+<dom-module id="some-dots">
+  <template>
+  <style>
+  :host {
+    display: flex;
+    flex-wrap: wrap;
+    will-change: opacity;
+  }
+  .some-dot {
+    border-radius: 50%;
+    margin: 2px;
+    transition: all 200ms ease-out;
+    background: var(--dot-background-color, rebeccapurple);
+  }
+  .dot-off {
+    background: #f5f8fa;
+  }
+  .xx-small { min-width: 2px; min-height: 2px; max-width: 2px; max-height: 2px; }
+  .x-small  { min-width: 5px; min-height: 5px; max-width: 5px; max-height: 5px; }
+  .small    { min-width: 8px;  min-height: 8px; max-width:  8px; max-height:  8px; }
+  .medium   { min-width: 10px; min-height: 10px; max-width: 10px; max-height: 10px; }
+  .large    { min-width: 15px; min-height: 15px; max-width: 15px; max-height: 15px; }
+  .x-large  { min-width: 25px; min-height: 25px; max-width: 25px; max-height: 25px; }
+  .xx-large { min-width: 35px; min-height: 35px; max-width: 35px; max-height: 35px; }
+  </style>
+  <template is="dom-repeat" items="{{dots}}">
+    <div class$="some-dot [[size]]"></div>
+  </template>
+</template>
+
+<script>
+Polymer({
+
+  is: 'some-dots',
+  ready: function() {
+    this.dots = new Array(this.n);
+  },
+  properties: {
+    /* Any non-negative number */
+    n: {
+      type: Number,
+      value: 10,
+      observer: '_nChanged'
+    },
+    /* xx-small x-small small medium large x-large xx-large */
+    size: {
+      type: String,
+      value: "medium",
+      observer: '_sizeChanged'
+    }
+  },
+  // Element behavior
+  _nChanged: function(number){
+    this.dots = new Array(this.n);
+    return;
+  },
+  _sizeChanged: function(size) {
+    if(size=="small")    this.size = "small";
+    if(size=="x-small")  this.size = "x-small";
+    if(size=="xx-small") this.size = "xx-small";
+    if(size=="medium")   this.size = "medium";
+    if(size=="large")    this.size = "large";
+    if(size=="x-large")  this.size = "x-large";
+    if(size=="xx-large") this.size = "xx-large";
+  }
+
+});
+</script>
+</dom-module>
